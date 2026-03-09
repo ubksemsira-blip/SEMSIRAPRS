@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Minda Sihat | PRS Corner</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f9ff;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Navigasi */
+        nav {
+            width: 100%;
+            background: #0083b0;
+            padding: 15px 20px;
+        }
+
+        .back-btn {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #0083b0;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Kotak Bingkai Gambar */
+        .image-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 90%;
+            width: 800px;
+            border: 5px solid #00b4db;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* Gaya Gambar */
+        .tips-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Pesanan jika gambar tidak dijumpai */
+        .error-msg {
+            padding: 40px;
+            color: #888;
+            font-style: italic;
+        }
+
+        footer {
+            padding-bottom: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* Animasi masuk */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> &nbsp; Kembali ke Menu</a>
+    </nav>
+
+    <header>
+        <h1>🌟 Tips Minda Sihat</h1>
+        <p>Lihat infografik di bawah untuk panduan kesihatan mental anda.</p>
+    </header>
+
+    <div class="image-container fade-in">
+        <img src="tips1.png" alt="Tips Minda Sihat" class="tips-image" onerror="this.style.display='none'; document.getElementById('placeholder').style.display='block';">
+        
+        <div id="placeholder" style="display:none;" class="error-msg">
+            <i class="fas fa-image fa-4x" style="margin-bottom: 15px; color: #ccc;"></i>
+            <p>Sila letakkan fail gambar bernama <strong>tips1.png</strong> di dalam folder yang sama dengan fail HTML ini untuk memaparkan tips.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Unit Bimbingan dan Kaunseling
+    </footer>
+
+</body>
+</html>
