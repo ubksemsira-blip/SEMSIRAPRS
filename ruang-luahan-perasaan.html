@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Luahan Perasaan | PRS Corner</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigasi */
+        nav {
+            background: #0083b0;
+            padding: 15px 20px;
+        }
+
+        .back-btn {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            width: fit-content;
+        }
+
+        /* Header Luahan */
+        .header-section {
+            background: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid #00b4db;
+        }
+
+        .header-section i {
+            font-size: 3rem;
+            color: #00b4db;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Kotak Peringatan Rahsia */
+        .anonymous-alert {
+            background-color: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .anonymous-alert i {
+            color: #2196f3;
+            font-size: 1.5rem;
+        }
+
+        /* Borang Luahan */
+        .form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        textarea {
+            height: 200px;
+            resize: vertical;
+        }
+
+        select:focus, textarea:focus {
+            outline: none;
+            border-color: #00b4db;
+        }
+
+        .btn-submit {
+            background: linear-gradient(135deg, #00b4db 0%, #0083b0 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,180,219,0.4);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+            font-size: 0.85rem;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> &nbsp; Kembali</a>
+    </nav>
+
+    <div class="header-section">
+        <i class="fas fa-comment-medical"></i>
+        <h1>Ruang Luahan Selamat</h1>
+        <p>Kongsikan apa yang terbuku di hati. Kami di sini untuk mendengar.</p>
+    </div>
+
+    <div class="container">
+        
+        <div class="anonymous-alert">
+            <i class="fas fa-user-secret"></i>
+            <p><strong>Identiti Dirahsiakan:</strong> Nama dan maklumat peribadi anda tidak akan direkodkan. Luahan ini terus dihantar kepada Guru Kaunseling secara sulit.</p>
+        </div>
+
+        <div class="form-card">
+            <form action="#">
+                
+                <div class="form-group">
+                    <label>Bagaimana perasaan anda hari ini?</label>
+                    <select required>
+                        <option value="">-- Pilih Perasaan --</option>
+                        <option value="sedih">Sedih / Kecewa</option>
+                        <option value="marah">Marah / Geram</option>
+                        <option value="stres">Stres / Tertekan</option>
+                        <option value="bingung">Bingung / Keliru</option>
+                        <option value="lain-lain">Lain-lain</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Luahkan segalanya di sini...</label>
+                    <textarea placeholder="Tuliskan apa yang anda rasa tanpa rasa takut..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Adakah anda ingin berjumpa Guru Kaunseling secara bersemuka?</label>
+                    <select>
+                        <option value="tidak">Tidak buat masa ini</option>
+                        <option value="ya">Ya, saya perlukan bantuan segera</option>
+                        <option value="mungkin">Mungkin nanti</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    <i class="fas fa-paper-plane"></i> &nbsp; Hantar Luahan
+                </button>
+
+            </form>
+        </div>
+
+        <footer>
+            &copy; 2026 Unit Bimbingan dan Kaunseling. Kerahsiaan anda keutamaan kami.
+        </footer>
+    </div>
+
+    <script>
+        // Demo ringkas untuk menunjukkan mesej dihantar
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih. Luahan anda telah dihantar secara rahsia kepada Guru Kaunseling. Sila bertenang, anda tidak keseorangan.');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>
