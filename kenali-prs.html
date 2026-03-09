@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenali PRS | PRS Corner</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 50px;
+        }
+
+        /* Navigasi / Header Kecil */
+        nav {
+            background: #0083b0;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-btn {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .back-btn i {
+            margin-right: 8px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: #0083b0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- Bahagian Carta Organisasi --- */
+        .org-chart {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .org-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .member-card {
+            background: white;
+            border: 2px dashed #00b4db;
+            padding: 20px;
+            border-radius: 15px;
+            min-width: 200px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .member-card.leader {
+            border: 2px solid #0083b0;
+            background: #eef9ff;
+        }
+
+        .member-card h4 {
+            color: #0083b0;
+            margin-bottom: 5px;
+        }
+
+        .member-card p {
+            font-size: 0.85rem;
+            color: #777;
+        }
+
+        .line {
+            width: 2px;
+            height: 20px;
+            background: #ccc;
+        }
+
+        .row-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* --- Bahagian Peranan PRS --- */
+        .roles-section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        .roles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .role-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .role-item:hover {
+            background: #eef9ff;
+            transform: translateX(5px);
+        }
+
+        .role-item i {
+            font-size: 1.5rem;
+            color: #00b4db;
+            margin-top: 5px;
+        }
+
+        .role-text strong {
+            display: block;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .role-text p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Kembali ke Menu</a>
+    </nav>
+
+    <header>
+        <h1>Kenali PRS Kami</h1>
+        <p>Pembimbing Rakan Sebaya: Bantu Diri Untuk Bantu Orang Lain</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="org-chart">
+            <h2 style="margin-bottom: 30px;">Carta Organisasi PRS</h2>
+            
+            <div class="org-container">
+                <div class="member-card leader">
+                    <h4>Guru Penasihat</h4>
+                    <p>(Nama Guru)</p>
+                </div>
+                
+                <div class="line"></div>
+
+                <div class="member-card">
+                    <h4>Pengerusi</h4>
+                    <p>(Nama Pelajar)</p>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="row-members">
+                    <div class="member-card">
+                        <h4>Naib Pengerusi</h4>
+                        <p>(Nama Pelajar)</p>
+                    </div>
+                    <div class="member-card">
+                        <h4>Setiausaha</h4>
+                        <p>(Nama Pelajar)</p>
+                    </div>
+                    <div class="member-card">
+                        <h4>Bendahari</h4>
+                        <p>(Nama Pelajar)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr style="border: 0.5px solid #eee; margin-bottom: 50px;">
+
+        <section class="roles-section">
+            <h2 style="text-align: center; color: #0083b0;">Peranan PRS</h2>
+            
+            <div class="roles-grid">
+                <div class="role-item">
+                    <i class="fas fa-hands-helping"></i>
+                    <div class="role-text">
+                        <strong>Pendengar Yang Baik</strong>
+                        <p>Menjadi rakan yang sedia mendengar luahan tanpa menghakimi.</p>
+                    </div>
+                </div>
+
+                <div class="role-item">
+                    <i class="fas fa-bullhorn"></i>
+                    <div class="role-text">
+                        <strong>Agen Perubahan</strong>
+                        <p>Mempromosikan sikap positif dan nilai murni dalam kalangan pelajar.</p>
+                    </div>
+                </div>
+
+                <div class="role-item">
+                    <i class="fas fa-user-shield"></i>
+                    <div class="role-text">
+                        <strong>Pemegang Rahsia</strong>
+                        <p>Menjaga amanah dan kerahsiaan rakan (kecuali perkara yang membahayakan nyawa).</p>
+                    </div>
+                </div>
+
+                <div class="role-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <div class="role-text">
+                        <strong>Pemberi Maklumat</strong>
+                        <p>Membantu menyebarkan info mengenai perkhidmatan Unit Bimbingan & Kaunseling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; color: #888; font-size: 0.8rem;">
+        &copy; 2026 PRS Corner - Unit Bimbingan & Kaunseling
+    </footer>
+
+</body>
+</html>
